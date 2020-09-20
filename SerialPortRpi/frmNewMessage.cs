@@ -16,7 +16,9 @@ namespace SerialPortRpi
 
 		private void Write(string s)
 		{
-			this.textBox1.AppendText(s);
+			//this.textBox1.AppendText(s);
+			textBox1.Focus();
+			SendKeys.SendWait(s);
 			if (!caps)
 				shift = false;
 		}
