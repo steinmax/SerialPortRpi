@@ -1,44 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SerialPortRpi
 {
-    public partial class frmNewMessage : Form
-    {
-	    private bool caps = false;
-	    private bool shift = false;
-	    public string text;
-	    public bool vaild;
-        public frmNewMessage()
-        {
-            InitializeComponent();
-        }
+	public partial class frmNewMessage : Form
+	{
+		private bool caps = false;
+		private bool shift = false;
+		public string text;
+		public bool vaild;
+		public frmNewMessage()
+		{
+			InitializeComponent();
+		}
 
-        private void Write(string s)
+		private void Write(string s)
 		{
 			this.textBox1.AppendText(s);
 			if (!caps)
 				shift = false;
 		}
-	    
+
 
 
 		#region Keys
-        private void keybackspace_Click(object sender, EventArgs e)
-        {
+		private void keybackspace_Click(object sender, EventArgs e)
+		{
 			try
 			{
 				textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
-			}catch { }
-			
-        }
+			}
+			catch { }
+
+		}
 		private void Shift(object sender, EventArgs e)
 		{
 			shift = !shift;
