@@ -295,5 +295,30 @@ namespace SerialPortRpi
 			caps = !caps;
 			shift = caps;
 		}
+
+		private void keyEstzet_Click(object sender, EventArgs e)
+		{
+			Write(shift ? "ẞ" : "ß");
+		}
+
+		private void keyue_Click(object sender, EventArgs e)
+		{
+			Write(shift ? "Ü" : "ü");
+		}
+
+		private void keyoe_Click(object sender, EventArgs e)
+		{
+			Write(shift ? "Ö" : "ö");
+		}
+
+		private void keyl_Click_1(object sender, EventArgs e)
+		{
+			Write(shift ? "L" : "l");
+		}
+
+		private void keyae_Click(object sender, EventArgs e)
+		{
+			Write(shift ? "Ä" : "ä");
+		}
 	}
 }

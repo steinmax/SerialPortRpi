@@ -43,7 +43,9 @@
 			this.keycurvedbracket = new System.Windows.Forms.Button();
 			this.keysquarebracket = new System.Windows.Forms.Button();
 			this.keym = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
+			this.keyae = new System.Windows.Forms.Button();
+			this.keyoe = new System.Windows.Forms.Button();
+			this.keyl = new System.Windows.Forms.Button();
 			this.keyk = new System.Windows.Forms.Button();
 			this.keyn = new System.Windows.Forms.Button();
 			this.keyj = new System.Windows.Forms.Button();
@@ -58,11 +60,13 @@
 			this.keyLshift = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.keygreaterthan = new System.Windows.Forms.Button();
+			this.keyEstzet = new System.Windows.Forms.Button();
 			this.keyy = new System.Windows.Forms.Button();
 			this.keys = new System.Windows.Forms.Button();
 			this.keya = new System.Windows.Forms.Button();
 			this.keyenter = new System.Windows.Forms.Button();
 			this.keyplus = new System.Windows.Forms.Button();
+			this.keyue = new System.Windows.Forms.Button();
 			this.keyp = new System.Windows.Forms.Button();
 			this.keyi = new System.Windows.Forms.Button();
 			this.keyu = new System.Windows.Forms.Button();
@@ -113,7 +117,9 @@
 			this.keyboard.Controls.Add(this.keycurvedbracket);
 			this.keyboard.Controls.Add(this.keysquarebracket);
 			this.keyboard.Controls.Add(this.keym);
-			this.keyboard.Controls.Add(this.button1);
+			this.keyboard.Controls.Add(this.keyae);
+			this.keyboard.Controls.Add(this.keyoe);
+			this.keyboard.Controls.Add(this.keyl);
 			this.keyboard.Controls.Add(this.keyk);
 			this.keyboard.Controls.Add(this.keyn);
 			this.keyboard.Controls.Add(this.keyj);
@@ -128,11 +134,13 @@
 			this.keyboard.Controls.Add(this.keyLshift);
 			this.keyboard.Controls.Add(this.button2);
 			this.keyboard.Controls.Add(this.keygreaterthan);
+			this.keyboard.Controls.Add(this.keyEstzet);
 			this.keyboard.Controls.Add(this.keyy);
 			this.keyboard.Controls.Add(this.keys);
 			this.keyboard.Controls.Add(this.keya);
 			this.keyboard.Controls.Add(this.keyenter);
 			this.keyboard.Controls.Add(this.keyplus);
+			this.keyboard.Controls.Add(this.keyue);
 			this.keyboard.Controls.Add(this.keyp);
 			this.keyboard.Controls.Add(this.keyi);
 			this.keyboard.Controls.Add(this.keyu);
@@ -253,7 +261,7 @@
 			// 
 			// keyhash
 			// 
-			this.keyhash.Location = new System.Drawing.Point(790, 115);
+			this.keyhash.Location = new System.Drawing.Point(730, 227);
 			this.keyhash.Name = "keyhash";
 			this.keyhash.Size = new System.Drawing.Size(60, 50);
 			this.keyhash.TabIndex = 21;
@@ -291,15 +299,35 @@
 			this.keym.UseVisualStyleBackColor = true;
 			this.keym.Click += new System.EventHandler(this.keym_Click);
 			// 
-			// button1
+			// keyae
 			// 
-			this.button1.Location = new System.Drawing.Point(631, 116);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(60, 50);
-			this.button1.TabIndex = 21;
-			this.button1.Text = "K";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.keyk_Click);
+			this.keyae.Location = new System.Drawing.Point(763, 113);
+			this.keyae.Name = "keyae";
+			this.keyae.Size = new System.Drawing.Size(60, 50);
+			this.keyae.TabIndex = 21;
+			this.keyae.Text = "Ä";
+			this.keyae.UseVisualStyleBackColor = true;
+			this.keyae.Click += new System.EventHandler(this.keyae_Click);
+			// 
+			// keyoe
+			// 
+			this.keyoe.Location = new System.Drawing.Point(697, 114);
+			this.keyoe.Name = "keyoe";
+			this.keyoe.Size = new System.Drawing.Size(60, 50);
+			this.keyoe.TabIndex = 21;
+			this.keyoe.Text = "Ö";
+			this.keyoe.UseVisualStyleBackColor = true;
+			this.keyoe.Click += new System.EventHandler(this.keyoe_Click);
+			// 
+			// keyl
+			// 
+			this.keyl.Location = new System.Drawing.Point(631, 116);
+			this.keyl.Name = "keyl";
+			this.keyl.Size = new System.Drawing.Size(60, 50);
+			this.keyl.TabIndex = 21;
+			this.keyl.Text = "L";
+			this.keyl.UseVisualStyleBackColor = true;
+			this.keyl.Click += new System.EventHandler(this.keyl_Click_1);
 			// 
 			// keyk
 			// 
@@ -442,6 +470,16 @@
 			this.keygreaterthan.UseVisualStyleBackColor = true;
 			this.keygreaterthan.Click += new System.EventHandler(this.keygreaterthan_Click);
 			// 
+			// keyEstzet
+			// 
+			this.keyEstzet.Location = new System.Drawing.Point(136, 227);
+			this.keyEstzet.Name = "keyEstzet";
+			this.keyEstzet.Size = new System.Drawing.Size(60, 50);
+			this.keyEstzet.TabIndex = 21;
+			this.keyEstzet.Text = "ß";
+			this.keyEstzet.UseVisualStyleBackColor = true;
+			this.keyEstzet.Click += new System.EventHandler(this.keyEstzet_Click);
+			// 
 			// keyy
 			// 
 			this.keyy.Location = new System.Drawing.Point(136, 171);
@@ -491,6 +529,16 @@
 			this.keyplus.Text = "*\r\n+";
 			this.keyplus.UseVisualStyleBackColor = true;
 			this.keyplus.Click += new System.EventHandler(this.keyplus_Click);
+			// 
+			// keyue
+			// 
+			this.keyue.Location = new System.Drawing.Point(743, 59);
+			this.keyue.Name = "keyue";
+			this.keyue.Size = new System.Drawing.Size(60, 50);
+			this.keyue.TabIndex = 21;
+			this.keyue.Text = "Ü";
+			this.keyue.UseVisualStyleBackColor = true;
+			this.keyue.Click += new System.EventHandler(this.keyue_Click);
 			// 
 			// keyp
 			// 
@@ -785,6 +833,10 @@
 		private System.Windows.Forms.Button keyhash;
 		private System.Windows.Forms.Button keytilde;
 		private System.Windows.Forms.Button keytab;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button keyl;
+		private System.Windows.Forms.Button keyae;
+		private System.Windows.Forms.Button keyoe;
+		private System.Windows.Forms.Button keyEstzet;
+		private System.Windows.Forms.Button keyue;
 	}
 }
