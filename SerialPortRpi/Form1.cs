@@ -74,7 +74,10 @@ namespace SerialPortRpi
             newMsgMaker.ShowDialog();
             if (newMsgMaker.vaild)
             {
-                serialPort.Write(newMsgMaker.text);
+                if (serialPort.IsOpen)
+                    serialPort.Write(newMsgMaker.text);
+                else
+                    tbConsole.AppendText("SerialPort not connected!"+Environment.NewLine);
             }
         }
     }
