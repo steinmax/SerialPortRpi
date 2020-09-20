@@ -326,5 +326,6 @@ namespace SerialPortRpi
 			textBox1.Text = "";
 		}
 		#endregion
+
 	}
 }

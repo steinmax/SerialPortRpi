@@ -92,6 +92,7 @@ namespace SerialPortRpi
 			this.key2 = new System.Windows.Forms.Button();
 			this.key1 = new System.Windows.Forms.Button();
 			this.keyEsc = new System.Windows.Forms.Button();
+			this.keybackspace = new System.Windows.Forms.Button();
 			this.keyboard.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -154,6 +155,7 @@ namespace SerialPortRpi
 			this.keyboard.Controls.Add(this.keye);
 			this.keyboard.Controls.Add(this.keyw);
 			this.keyboard.Controls.Add(this.keyq);
+			this.keyboard.Controls.Add(this.keybackspace);
 			this.keyboard.Controls.Add(this.keyclear);
 			this.keyboard.Controls.Add(this.keybackslash);
 			this.keyboard.Controls.Add(this.key0);
@@ -823,6 +825,17 @@ namespace SerialPortRpi
 			this.keyEsc.UseVisualStyleBackColor = true;
 			this.keyEsc.Click += new System.EventHandler(this.keyEsc_Click);
 			// 
+			// keybackspace
+			// 
+			this.keybackspace.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.keybackspace.Location = new System.Drawing.Point(795, 3);
+			this.keybackspace.Name = "keybackspace";
+			this.keybackspace.Size = new System.Drawing.Size(126, 50);
+			this.keybackspace.TabIndex = 12;
+			this.keybackspace.Text = "<---";
+			this.keybackspace.UseVisualStyleBackColor = true;
+			this.keybackspace.Click += new System.EventHandler(this.keybackspace_Click);
+			// 
 			// frmNewMessage
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -905,5 +918,6 @@ namespace SerialPortRpi
 		private Button keyoe;
 		private Button keyEstzet;
 		private Button keyue;
+		private Button keybackspace;
 	}
 }
