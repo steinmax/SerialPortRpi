@@ -285,7 +285,7 @@ namespace SerialPortRpi
 			this.Close();
 		}
 
-		#endregion
+
 
 		private void keyenter_Click(object sender, EventArgs e)
 		{
@@ -324,5 +324,11 @@ namespace SerialPortRpi
 		{
 			Write(shift ? "Ä" : "ä");
 		}
+
+		private void keyclear_Click(object sender, EventArgs e)
+		{
+			textBox1.Text = "";
+		}
+		#endregion
 	}
 }
