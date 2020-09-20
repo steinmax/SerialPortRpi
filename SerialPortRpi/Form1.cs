@@ -78,7 +78,11 @@ namespace SerialPortRpi
         private void btnNewMessage_Click(object sender, EventArgs e)
         {
             frmNewMessage newMsgMaker = new frmNewMessage();
-            newMsgMaker.Show();
+            newMsgMaker.ShowDialog();
+            if (newMsgMaker.vaild)
+            {
+                serialPort.Write(newMsgMaker.text);
+            }
         }
     }
 }
