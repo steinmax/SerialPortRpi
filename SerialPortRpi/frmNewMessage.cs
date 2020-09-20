@@ -30,7 +30,10 @@ namespace SerialPortRpi
 		{
 			try
 			{
-				textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
+				textBox1.Focus();
+				int sStart = textBox1.SelectionStart;
+				textBox1.Text = textBox1.Text.Remove(sStart - 1, 1);
+				textBox1.SelectionStart = sStart - 1;
 			}
 			catch { }
 
