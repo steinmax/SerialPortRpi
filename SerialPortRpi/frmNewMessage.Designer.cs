@@ -43,6 +43,7 @@
 			this.keycurvedbracket = new System.Windows.Forms.Button();
 			this.keysquarebracket = new System.Windows.Forms.Button();
 			this.keym = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.keyk = new System.Windows.Forms.Button();
 			this.keyn = new System.Windows.Forms.Button();
 			this.keyj = new System.Windows.Forms.Button();
@@ -84,7 +85,6 @@
 			this.key2 = new System.Windows.Forms.Button();
 			this.key1 = new System.Windows.Forms.Button();
 			this.keyEsc = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
 			this.keyboard.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -197,7 +197,7 @@
 			this.keycapslock.TabIndex = 22;
 			this.keycapslock.Text = "↓";
 			this.keycapslock.UseVisualStyleBackColor = true;
-			this.keycapslock.Click += new System.EventHandler(this.Shift);
+			this.keycapslock.Click += new System.EventHandler(this.Caps);
 			// 
 			// keyo
 			// 
@@ -217,6 +217,7 @@
 			this.keyRshift.TabIndex = 21;
 			this.keyRshift.Text = "↑";
 			this.keyRshift.UseVisualStyleBackColor = true;
+			this.keyRshift.Click += new System.EventHandler(this.Shift);
 			this.keyRshift.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Shift);
 			this.keyRshift.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Shift);
 			// 
@@ -289,6 +290,16 @@
 			this.keym.Text = "M";
 			this.keym.UseVisualStyleBackColor = true;
 			this.keym.Click += new System.EventHandler(this.keym_Click);
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(631, 116);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(60, 50);
+			this.button1.TabIndex = 21;
+			this.button1.Text = "K";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.keyk_Click);
 			// 
 			// keyk
 			// 
@@ -408,6 +419,7 @@
 			this.keyLshift.TabIndex = 21;
 			this.keyLshift.Text = "↑";
 			this.keyLshift.UseVisualStyleBackColor = true;
+			this.keyLshift.Click += new System.EventHandler(this.Shift);
 			this.keyLshift.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Shift);
 			this.keyLshift.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Shift);
 			// 
@@ -699,16 +711,6 @@
 			this.keyEsc.Text = "Esc";
 			this.keyEsc.UseVisualStyleBackColor = true;
 			this.keyEsc.Click += new System.EventHandler(this.keyEsc_Click);
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(631, 116);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(60, 50);
-			this.button1.TabIndex = 21;
-			this.button1.Text = "K";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.keyk_Click);
 			// 
 			// frmNewMessage
 			// 

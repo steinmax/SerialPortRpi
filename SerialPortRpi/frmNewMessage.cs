@@ -12,6 +12,7 @@ namespace SerialPortRpi
 {
     public partial class frmNewMessage : Form
     {
+	    private bool caps = false;
 	    private bool shift = false;
 	    public string text;
 	    public bool vaild;
@@ -23,6 +24,8 @@ namespace SerialPortRpi
         private void Write(string s)
 		{
 			this.textBox1.AppendText(s);
+			if (!caps)
+				shift = false;
 		}
 	    
 
@@ -285,6 +288,12 @@ namespace SerialPortRpi
 			text = this.textBox1.Text;
 			vaild = true;
 			this.Close();
+		}
+
+		private void Caps(object sender, EventArgs e)
+		{
+			caps = !caps;
+			shift = caps;
 		}
 	}
 }
