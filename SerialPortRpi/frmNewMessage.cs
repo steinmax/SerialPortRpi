@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SerialPortRpi
 {
     public partial class frmNewMessage : Form
     {
-	    private bool caps = false;
-	    private bool shift = false;
+	    private bool caps;
+	    private bool shift;
 	    public string text;
 	    public bool vaild;
         public frmNewMessage()
@@ -23,7 +16,7 @@ namespace SerialPortRpi
 
         private void Write(string s)
 		{
-			this.textBox1.AppendText(s);
+			textBox1.AppendText(s);
 			if (!caps)
 				shift = false;
 		}
@@ -33,7 +26,7 @@ namespace SerialPortRpi
 		#region Keys
         private void keybackspace_Click(object sender, EventArgs e)
         {
-	        this.textBox1.Text.Remove(this.textBox1.Text.Length - 1, 1);
+	        textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
         }
 		private void Shift(object sender, EventArgs e)
 		{
@@ -278,16 +271,16 @@ namespace SerialPortRpi
 		}
 		private void keyEsc_Click(object sender, EventArgs e)
 		{
-			this.Close();
+			Close();
 		}
 
 		#endregion
 
 		private void keyenter_Click(object sender, EventArgs e)
 		{
-			text = this.textBox1.Text;
+			text = textBox1.Text;
 			vaild = true;
-			this.Close();
+			Close();
 		}
 
 		private void Caps(object sender, EventArgs e)
