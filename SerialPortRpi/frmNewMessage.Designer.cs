@@ -84,6 +84,7 @@
 			this.key2 = new System.Windows.Forms.Button();
 			this.key1 = new System.Windows.Forms.Button();
 			this.keyEsc = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.keyboard.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -112,6 +113,7 @@
 			this.keyboard.Controls.Add(this.keycurvedbracket);
 			this.keyboard.Controls.Add(this.keysquarebracket);
 			this.keyboard.Controls.Add(this.keym);
+			this.keyboard.Controls.Add(this.button1);
 			this.keyboard.Controls.Add(this.keyk);
 			this.keyboard.Controls.Add(this.keyn);
 			this.keyboard.Controls.Add(this.keyj);
@@ -250,7 +252,7 @@
 			// 
 			// keyhash
 			// 
-			this.keyhash.Location = new System.Drawing.Point(763, 114);
+			this.keyhash.Location = new System.Drawing.Point(790, 115);
 			this.keyhash.Name = "keyhash";
 			this.keyhash.Size = new System.Drawing.Size(60, 50);
 			this.keyhash.TabIndex = 21;
@@ -260,7 +262,7 @@
 			// 
 			// keycurvedbracket
 			// 
-			this.keycurvedbracket.Location = new System.Drawing.Point(697, 114);
+			this.keycurvedbracket.Location = new System.Drawing.Point(202, 227);
 			this.keycurvedbracket.Name = "keycurvedbracket";
 			this.keycurvedbracket.Size = new System.Drawing.Size(60, 50);
 			this.keycurvedbracket.TabIndex = 21;
@@ -270,7 +272,7 @@
 			// 
 			// keysquarebracket
 			// 
-			this.keysquarebracket.Location = new System.Drawing.Point(631, 115);
+			this.keysquarebracket.Location = new System.Drawing.Point(598, 227);
 			this.keysquarebracket.Name = "keysquarebracket";
 			this.keysquarebracket.Size = new System.Drawing.Size(60, 50);
 			this.keysquarebracket.TabIndex = 21;
@@ -470,7 +472,7 @@
 			// 
 			// keyplus
 			// 
-			this.keyplus.Location = new System.Drawing.Point(743, 60);
+			this.keyplus.Location = new System.Drawing.Point(664, 227);
 			this.keyplus.Name = "keyplus";
 			this.keyplus.Size = new System.Drawing.Size(60, 50);
 			this.keyplus.TabIndex = 21;
@@ -698,6 +700,16 @@
 			this.keyEsc.UseVisualStyleBackColor = true;
 			this.keyEsc.Click += new System.EventHandler(this.keyEsc_Click);
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(631, 116);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(60, 50);
+			this.button1.TabIndex = 21;
+			this.button1.Text = "K";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.keyk_Click);
+			// 
 			// frmNewMessage
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -771,5 +783,6 @@
 		private System.Windows.Forms.Button keyhash;
 		private System.Windows.Forms.Button keytilde;
 		private System.Windows.Forms.Button keytab;
+		private System.Windows.Forms.Button button1;
 	}
 }
