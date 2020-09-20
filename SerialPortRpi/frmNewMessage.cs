@@ -33,7 +33,11 @@ namespace SerialPortRpi
 		#region Keys
         private void keybackspace_Click(object sender, EventArgs e)
         {
-	        this.textBox1.Text.Remove(this.textBox1.Text.Length - 1, 1);
+			try
+			{
+				textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
+			}catch { }
+			
         }
 		private void Shift(object sender, EventArgs e)
 		{
