@@ -1,11 +1,14 @@
-﻿namespace SerialPortRpi
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace SerialPortRpi
 {
     partial class frmNewMessage
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -841,66 +844,66 @@
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Panel keyboard;
-		private System.Windows.Forms.Button keybackspace;
-		private System.Windows.Forms.Button keybackslash;
-		private System.Windows.Forms.Button key0;
-		private System.Windows.Forms.Button key9;
-		private System.Windows.Forms.Button key8;
-		private System.Windows.Forms.Button key7;
-		private System.Windows.Forms.Button key6;
-		private System.Windows.Forms.Button key5;
-		private System.Windows.Forms.Button key4;
-		private System.Windows.Forms.Button key3;
-		private System.Windows.Forms.Button key2;
-		private System.Windows.Forms.Button key1;
-		private System.Windows.Forms.Button keyEsc;
-		private System.Windows.Forms.Button keyo;
-		private System.Windows.Forms.Button keydot;
-		private System.Windows.Forms.Button keycomma;
-		private System.Windows.Forms.Button keysquarebracket;
-		private System.Windows.Forms.Button keym;
-		private System.Windows.Forms.Button keyk;
-		private System.Windows.Forms.Button keyn;
-		private System.Windows.Forms.Button keyj;
-		private System.Windows.Forms.Button keyb;
-		private System.Windows.Forms.Button keyh;
-		private System.Windows.Forms.Button keyv;
-		private System.Windows.Forms.Button keyg;
-		private System.Windows.Forms.Button keyc;
-		private System.Windows.Forms.Button keyf;
-		private System.Windows.Forms.Button keyx;
-		private System.Windows.Forms.Button keyd;
-		private System.Windows.Forms.Button keyy;
-		private System.Windows.Forms.Button keys;
-		private System.Windows.Forms.Button keya;
-		private System.Windows.Forms.Button keyp;
-		private System.Windows.Forms.Button keyi;
-		private System.Windows.Forms.Button keyu;
-		private System.Windows.Forms.Button keyz;
-		private System.Windows.Forms.Button keyt;
-		private System.Windows.Forms.Button keyr;
-		private System.Windows.Forms.Button keye;
-		private System.Windows.Forms.Button keyw;
-		private System.Windows.Forms.Button keyq;
-		private System.Windows.Forms.Button keyLshift;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button keygreaterthan;
-		private System.Windows.Forms.Button keyRshift;
-		private System.Windows.Forms.Button keydash;
-		private System.Windows.Forms.Button keycapslock;
-		private System.Windows.Forms.Button keyspace;
-		private System.Windows.Forms.Button keycurvedbracket;
-		private System.Windows.Forms.Button keyenter;
-		private System.Windows.Forms.Button keyplus;
-		private System.Windows.Forms.Button keyhash;
-		private System.Windows.Forms.Button keytilde;
-		private System.Windows.Forms.Button keytab;
-		private System.Windows.Forms.Button keyl;
-		private System.Windows.Forms.Button keyae;
-		private System.Windows.Forms.Button keyoe;
-		private System.Windows.Forms.Button keyEstzet;
-		private System.Windows.Forms.Button keyue;
+		private TextBox textBox1;
+		private Panel keyboard;
+		private Button keybackspace;
+		private Button keybackslash;
+		private Button key0;
+		private Button key9;
+		private Button key8;
+		private Button key7;
+		private Button key6;
+		private Button key5;
+		private Button key4;
+		private Button key3;
+		private Button key2;
+		private Button key1;
+		private Button keyEsc;
+		private Button keyo;
+		private Button keydot;
+		private Button keycomma;
+		private Button keysquarebracket;
+		private Button keym;
+		private Button keyk;
+		private Button keyn;
+		private Button keyj;
+		private Button keyb;
+		private Button keyh;
+		private Button keyv;
+		private Button keyg;
+		private Button keyc;
+		private Button keyf;
+		private Button keyx;
+		private Button keyd;
+		private Button keyy;
+		private Button keys;
+		private Button keya;
+		private Button keyp;
+		private Button keyi;
+		private Button keyu;
+		private Button keyz;
+		private Button keyt;
+		private Button keyr;
+		private Button keye;
+		private Button keyw;
+		private Button keyq;
+		private Button keyLshift;
+		private Button button2;
+		private Button keygreaterthan;
+		private Button keyRshift;
+		private Button keydash;
+		private Button keycapslock;
+		private Button keyspace;
+		private Button keycurvedbracket;
+		private Button keyenter;
+		private Button keyplus;
+		private Button keyhash;
+		private Button keytilde;
+		private Button keytab;
+		private Button keyl;
+		private Button keyae;
+		private Button keyoe;
+		private Button keyEstzet;
+		private Button keyue;
 	}
 }

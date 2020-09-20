@@ -1,11 +1,14 @@
-﻿namespace SerialPortRpi
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace SerialPortRpi
 {
     partial class frmNumInput
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -221,19 +224,19 @@
 
         #endregion
 
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Label lbnNewBaudRate;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn9;
-        private System.Windows.Forms.Button btn8;
-        private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button button3;
+        private ContextMenuStrip contextMenuStrip1;
+        private Label lbnNewBaudRate;
+        private Button btn1;
+        private Button btn2;
+        private Button btn3;
+        private Button btn6;
+        private Button btn5;
+        private Button btn4;
+        private Button btn9;
+        private Button btn8;
+        private Button btn7;
+        private Button button1;
+        private Button btn0;
+        private Button button3;
     }
 }
